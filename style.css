@@ -433,3 +433,8 @@ body {
     height: 40rem;
   }
 }
+
+/* Mobile View Section */
+@media only screen and (max-width: 600px) {
+  
+}
