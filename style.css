@@ -323,7 +323,7 @@ section {
 /* --- Services Section --- */
 .services-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
   gap: 2rem;
 }
 
@@ -372,7 +372,8 @@ section {
 }
 .skills-icons {
     flex: 1;
-    min-width: 300px;
+    min-width: 250px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -408,7 +409,8 @@ section {
 }
 .skills-chart-container {
     flex: 1;
-    min-width: 300px;
+    min-width: 250px;
+    width: 100%;
     background: var(--bg-color);
     padding: 2rem;
     border-radius: 1rem;
@@ -440,7 +442,7 @@ section {
 }
 .portfolio-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 2rem;
 }
 
@@ -516,7 +518,7 @@ section {
 }
 .testimonial-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
     gap: 2rem;
 }
 .testimonial-box {
@@ -555,7 +557,7 @@ section {
 /* --- Blog Section --- */
 .blog-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
     gap: 2.5rem;
 }
 .blog-card {
@@ -847,5 +849,14 @@ section {
   }
   .contact form .input-box input {
     width: 100%;
+  }
+  .home-content h1 {
+    font-size: 2.8rem;
+  }
+  .home-content h3 {
+    font-size: 1.5rem;
+  }
+  .heading {
+    font-size: 2.5rem;
   }
 }
