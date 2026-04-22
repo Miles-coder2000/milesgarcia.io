@@ -1,249 +1,276 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>3D Portfolio Website | Milescoder-2000</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miles Garcia | Full Stack Developer</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Miles Garcia, a Full Stack Web Developer specializing in React, Node.js, and modern web technologies." />
+    <meta name="keywords" content="Miles Garcia, Web Developer, Portfolio, Frontend, Backend, Full Stack" />
+    <meta property="og:title" content="Miles Garcia | Developer Portfolio" />
+    <meta property="og:description" content="Discover the professional portfolio and projects of Miles Garcia." />
+    <meta property="og:image" content="assets/profile.jpg" />
+    
+    <!-- PWA / Service Worker Meta -->
+    <meta name="theme-color" content="#00abf0" />
+    <link rel="apple-touch-icon" href="assets/profile.jpg" />
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css" />
-    <!-- box icons -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   </head>
-
   <body>
-    <div class="wrapper">
-      <div class="cover cover-left"></div>
-      <div class="cover cover-right"></div>
-      <div class="book">
-        <!-- profile page -->
-        <div class="book-page page-left">
-          <div class="profile-page">
-            <img src="assets/profile.jpg" alt="" />
-            <h1>Miles Garcia</h1>
-            <h3>Web Developer | Project Seller</h3>
-            <div class="social-media">
-              <a href="https://www.facebook.com/miles.garcia26/"><i class="bx bxl-facebook"></i></a>
-              <a href="https://twitter.com/LanderSotelo"><i class="bx bxl-twitter"></i></a>
-              <a href="https://www.linkedin.com/in/miles-lander-garcia-4b3964291/"><i class="bx bxl-linkedin"></i></a>
-              <a href="https://www.instagram.com/miles.garcia26/"><i class="bx bxl-instagram-alt"></i></a>
-            </div>
-            <p>
-              Hi, my name is Miles Garcia! A future fullstack developer and also a great programmer experience will
-              be with you. If you have any questions please contact me at my social media platform.
-            </p>
-            <div class="btn-box">
-              <a href="#" class="btn">Download CV</a>
-              <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="btn contact-me">Contact Me</a>
-            </div>
+    
+    <!-- Header / Navbar -->
+    <header class="header">
+      <a href="#" class="logo">Miles.</a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+      
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" class="theme-toggle">
+          <i class='bx bx-sun'></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi, I'm <span>Miles Garcia</span></h1>
+        <h3 class="text-animation">I'm a <span></span></h3>
+        <p>A passionate developer crafting beautiful and functional digital experiences. Let's build something amazing together.</p>
+        
+        <div class="social-media">
+          <a href="https://www.facebook.com/miles.garcia26/" target="_blank"><i class="bx bxl-facebook"></i></a>
+          <a href="https://twitter.com/LanderSotelo" target="_blank"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/miles-lander-garcia-4b3964291/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.instagram.com/miles.garcia26/" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+          <a href="https://github.com/Miles-coder2000" target="_blank"><i class="bx bxl-github"></i></a>
+        </div>
+        
+        <div class="btn-box">
+          <a href="#" class="btn" download="Miles_Garcia_Resume.pdf">Download CV</a>
+          <a href="#contact" class="btn contact-me">Contact Me</a>
+        </div>
+      </div>
+      
+      <div class="home-img">
+        <div class="img-box">
+            <img src="assets/profile.jpg" alt="Miles Garcia Profile Picture" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Web Developer & Project Seller</h3>
+        <p>Hi, my name is Miles Garcia! I am a future fullstack developer focused on creating great programming experiences. I have a strong foundation in modern web technologies and a passion for solving complex problems.</p>
+      </div>
+
+      <div class="timeline-container">
+        <!-- Work Experience -->
+        <div class="timeline-box">
+          <h2 class="timeline-title">Work Experience</h2>
+          <div class="timeline-item">
+            <span class="year"><i class="bx bx-calendar"></i> 2020 - 2023</span>
+            <h3>Service Crew & Asst. Cook</h3>
+            <p>MACDINER (Service Crew)<br>Arnolfs Chicken (Asst. Cook)</p>
           </div>
         </div>
 
-        <!-- page 1 & 2 -->
-        <div class="book-page page-right turn" id="turn-1">
-          <!-- page 1 (work experience) -->
-          <div class="page-front">
-            <h1 class="title">Work Experience</h1>
-            <div class="workeduc-box">
-              <div class="workeduc-content">
-                <span class="year"
-                  ><i class="bx bx-calendar"></i>2020 - 2023</span
-                >
-                <h3>Employment Records</h3>
-                <p>
-                  MACDINER (Service Crew)<br>
-                  Arnolfs Chicken (Asst. Cook)
-                </p>
-              </div>
-            </div>
-            <span class="number-page">1</span>
-            <!-- next button -->
-            <span class="nextprev-btn" data-page="turn-1"
-              ><i class="bx bx-chevron-right"></i
-            ></span>
-          </div>
-
-          <!-- page 2 (education) -->
-          <div class="page-back">
-            <h1 class="title">Education</h1>
-
-            <div class="workeduc-box">
-              <div class="workeduc-content">
-                <span class="year"
-                  ><i class="bx bx-calendar"></i>2022 - CURRENT</span
-                >
-                <h3>Bachelors Degree - College</h3>
-                <p>
-                  Bachelors of Science in Information Technology<br>
-                  Marvelous College and Technology INC.
-                </p>
-              </div>
-            </div>
-
-            <span class="number-page">2</span>
-            <!-- prev button -->
-            <span class="nextprev-btn back" data-page="turn-1"
-              ><i class="bx bx-chevron-left"></i
-            ></span>
+        <!-- Education -->
+        <div class="timeline-box">
+          <h2 class="timeline-title">Education</h2>
+          <div class="timeline-item">
+            <span class="year"><i class="bx bx-calendar"></i> 2022 - CURRENT</span>
+            <h3>Bachelors of Science in Information Technology</h3>
+            <p>Marvelous College and Technology INC.</p>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- page 3 & 4 -->
-        <div class="book-page page-right turn" id="turn-2">
-          <!-- page 3 (my services) -->
-          <div class="page-front">
-            <h1 class="title">My Services</h1>
-            <div class="services-box">
-              <div class="services-content">
-                <i class="bx bx-code-alt"></i>
-                <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <a href="#" class="btn">Read More</a>
-              </div>
-              <div class="services-content">
-                <i class="bx bxs-paint"></i>
-                <h3>Creative Design</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <a href="#" class="btn">Read More</a>
-              </div>
-              <div class="services-content">
-                <i class="bx bx-bar-chart-alt"></i>
-                <h3>Digital Marketing</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <a href="#" class="btn">Read More</a>
-              </div>
-              <div class="services-content">
-                <i class="bx bx-search"></i>
-                <h3>SEO</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <a href="#" class="btn">Read More</a>
-              </div>
-            </div>
-            <span class="number-page">3</span>
-            <!-- next button -->
-            <span class="nextprev-btn" data-page="turn-2"
-              ><i class="bx bx-chevron-right"></i
-            ></span>
-          </div>
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <h2 class="heading">My <span>Services</span></h2>
+      <div class="services-container">
+        <div class="service-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Web Development</h3>
+          <p>Building responsive, fast, and scalable web applications using the latest technologies.</p>
+        </div>
+        <div class="service-box">
+          <i class="bx bxs-paint"></i>
+          <h3>Creative Design</h3>
+          <p>Designing beautiful, user-centric interfaces and comprehensive design systems.</p>
+        </div>
+        <div class="service-box">
+          <i class="bx bx-bar-chart-alt"></i>
+          <h3>Digital Marketing</h3>
+          <p>Helping your brand reach a wider audience with strategic marketing solutions.</p>
+        </div>
+        <div class="service-box">
+          <i class="bx bx-search"></i>
+          <h3>SEO Optimization</h3>
+          <p>Improving your website's visibility on search engines to drive organic traffic.</p>
+        </div>
+      </div>
+    </section>
 
-          <!-- page 4 (my skills) -->
-          <div class="page-back">
-            <h1 class="title">My Skills</h1>
-            <div class="skills-box">
-              <div class="skills-content">
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <h2 class="heading">My <span>Skills</span></h2>
+      <div class="skills-wrapper">
+        <div class="skills-icons">
+            <div class="skill-category">
                 <h3>Front-End</h3>
-                <div class="content">
-                  <span><i class="bx bxl-html5"></i>HTML</span>
-                  <span><i class="bx bxl-css3"></i>CSS</span>
-                  <span><i class="bx bxl-javascript"></i>JS</span>
-                  <span><i class="bx bxl-react"></i>React</span>
-                  <span><i class="bx bxs-terminal"></i>Next.js</span>
-                  <span><i class="bx bxl-bootstrap"></i>Bootstrap</span>
-                  <span><i class="bx bxl-tailwind-css"></i>Tailwind</span>
+                <div class="skill-list">
+                    <span><i class="bx bxl-html5"></i> HTML</span>
+                    <span><i class="bx bxl-css3"></i> CSS</span>
+                    <span><i class="bx bxl-javascript"></i> JavaScript</span>
+                    <span><i class="bx bxl-react"></i> React</span>
+                    <span><i class="bx bxs-terminal"></i> Next.js</span>
+                    <span><i class="bx bxl-tailwind-css"></i> Tailwind</span>
                 </div>
-              </div>
-              <div class="skills-content">
-                <h3>Back-End</h3>
-                <div class="content">
-                  <span><i class="bx bxl-php"></i>PHP</span>
-                  <span><i class="bx bxl-nodejs"></i>Node</span>
-                  <span><i class="bx bx-terminal"></i>MySQL</span>
-                  <span><i class="bx bxl-python"></i>Python</span>
-                </div>
-              </div>
-              <div class="skills-content">
-                <h3>UI/UX design</h3>
-                <div class="content">
-                  <span><i class="bx bxl-figma"></i>Figma</span>
-                </div>
-              </div>
             </div>
-            <span class="number-page">4</span>
-            <!-- prev button -->
-            <span class="nextprev-btn back" data-page="turn-2"
-              ><i class="bx bx-chevron-left"></i
-            ></span>
+            <div class="skill-category">
+                <h3>Back-End & Tools</h3>
+                <div class="skill-list">
+                    <span><i class="bx bxl-php"></i> PHP</span>
+                    <span><i class="bx bxl-nodejs"></i> Node.js</span>
+                    <span><i class="bx bx-data"></i> MySQL</span>
+                    <span><i class="bx bxl-python"></i> Python</span>
+                    <span><i class="bx bxl-git"></i> Git</span>
+                </div>
+            </div>
+        </div>
+        <div class="skills-chart-container">
+            <canvas id="skillsChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Projects Section -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+      
+      <!-- Category Filters -->
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+      </div>
+
+      <!-- Dynamic Projects Container -->
+      <div class="portfolio-container" id="portfolio-grid">
+        <!-- Project cards injected via JavaScript -->
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <h2 class="heading">Client <span>Testimonials</span></h2>
+      <div class="testimonial-container">
+        <div class="testimonial-box">
+          <i class='bx bxs-quote-left'></i>
+          <p>"Miles delivered our project on time and exceeded expectations. The code quality was excellent!"</p>
+          <div class="client-info">
+            <h4>John Doe</h4>
+            <span>Tech Startup Founder</span>
           </div>
         </div>
-        <!-- page 5 & 6 -->
-        <div class="book-page page-right turn" id="turn-3">
-          <!-- page 5 (latest project or my portfolio) -->
-          <div class="page-front">
-            <h1 class="title">Latest Project</h1>
-            <div class="portfolio-box">
-              <div class="img-box">
-                <img src="assets/portfolio2.png" alt="" />
-              </div>
-              <div class="info-box">
-                <div class="info-title">
-                  <h3>Gesture Controlled Volume | Machine Learning</h3>
-                  <a href="https://www.facebook.com/miles.garcia26/videos/362542350090693?idorvanity=320589898605172"
-                    >Live Preview<i class="bx bx-link-external"></i
-                  ></a>
-                </div>
-                <p>Tech Used</p>
-                <p>
-                  Feeltek 720p | JedEL Mini | Made in Python (OpenCV2 - Numpy)
-                </p>
-              </div>
-              <div class="btn-box">
-                <a href="https://www.mediafire.com/folder/yzrcxpdmidxyb/GestureControlledVolume" class="btn">Source Code</a>
-                <a href="https://github.com/Miles-coder2000" class="btn">More Projects</a>
-              </div>
-            </div>
-            <span class="number-page">5</span>
-            <!-- next button -->
-            <span class="nextprev-btn" data-page="turn-3"
-              ><i class="bx bx-chevron-right"></i
-            ></span>
+        <div class="testimonial-box">
+          <i class='bx bxs-quote-left'></i>
+          <p>"A brilliant developer who understands both design and robust backend architecture."</p>
+          <div class="client-info">
+            <h4>Jane Smith</h4>
+            <span>Creative Director</span>
           </div>
-          <!-- page 6 (contact me) -->
-          <div class="page-back">
-            <h1 class="title">Contact Me! On GMAIL!</h1>
-            <div class="contact-box">
-              <form action="https://mail.google.com/mail/u/0/#inbox?compose=new">
-                <input
-                  type="text"
-                  class="field"
-                  placeholder="Full Name"
-                  required
-                />
-                <input
-                  type="email"
-                  class="field"
-                  placeholder="Email Address"
-                  required
-                />
-                <textarea
-                  name=""
-                  id=""
-                  cols="30"
-                  rows="10"
-                  class="field"
-                  placeholder="Your Message"
-                  required
-                ></textarea>
-                <input type="submit" class="btn" value="Send Message" />
-              </form>
-            </div>
+        </div>
+      </div>
+    </section>
 
-            <span class="number-page">6</span>
-            <!-- prev button -->
-            <span class="nextprev-btn back" data-page="turn-3"
-              ><i class="bx bx-chevron-left"></i
-            ></span>
-            <a href="#" class="back-profile">
-              <p>Profile</p>
-              <i class="bx bxs-user"></i>
-            </a>
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+      <h2 class="heading">Latest <span>Articles</span></h2>
+      <div class="blog-container">
+        <article class="blog-card">
+          <div class="blog-img">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Blog 1">
           </div>
+          <div class="blog-content">
+            <span class="blog-date">April 20, 2026</span>
+            <h3>The Future of Web Development</h3>
+            <p>Exploring the upcoming trends in frameworks, AI integration, and performance optimization.</p>
+            <a href="#" class="read-more">Read More <i class='bx bx-right-arrow-alt'></i></a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-img">
+            <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?auto=format&fit=crop&w=600&q=80" alt="Blog 2">
+          </div>
+          <div class="blog-content">
+            <span class="blog-date">March 15, 2026</span>
+            <h3>Mastering CSS Grid and Flexbox</h3>
+            <p>A comprehensive guide to building complex responsive layouts without breaking a sweat.</p>
+            <a href="#" class="read-more">Read More <i class='bx bx-right-arrow-alt'></i></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+      <!-- Formspree Integration (Replace 'your_formspree_id' with actual ID later) -->
+      <form action="https://formspree.io/f/xvonzgnq" method="POST" id="contact-form">
+        <div class="input-box">
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input type="email" name="email" placeholder="Email Address" required />
+        </div>
+        <div class="input-box">
+          <input type="number" name="phone" placeholder="Mobile Number" />
+          <input type="text" name="subject" placeholder="Email Subject" required />
+        </div>
+        <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2026 by Miles Garcia | All Rights Reserved.</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="modal-body">
+          <!-- Injected via JS -->
         </div>
       </div>
     </div>
 
-    <!-- what I used : HTML, CSS, JS, Boxicons,  -->
-
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

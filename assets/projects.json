@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Gesture Controlled Volume",
+    "category": "machine-learning",
+    "image": "assets/portfolio2.png",
+    "description": "A machine learning project using Python, OpenCV2, and Numpy to control system volume via hand gestures detected from a Feeltek 720p webcam.",
+    "tech": ["Python", "OpenCV", "NumPy"],
+    "previewLink": "https://www.facebook.com/miles.garcia26/videos/362542350090693?idorvanity=320589898605172",
+    "sourceLink": "https://www.mediafire.com/folder/yzrcxpdmidxyb/GestureControlledVolume"
+  },
+  {
+    "id": 2,
+    "title": "E-Commerce Web App",
+    "category": "web",
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=600&q=80",
+    "description": "A full-stack e-commerce application built with React, Node.js, and MongoDB featuring a fully functional shopping cart and payment gateway.",
+    "tech": ["React", "Node.js", "MongoDB", "Express"],
+    "previewLink": "#",
+    "sourceLink": "#"
+  },
+  {
+    "id": 3,
+    "title": "Portfolio Website V1",
+    "category": "web",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80",
+    "description": "The first version of my personal portfolio website, utilizing HTML, CSS, JavaScript, and an innovative 3D book layout.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "previewLink": "#",
+    "sourceLink": "#"
+  },
+  {
+    "id": 4,
+    "title": "Task Management Dashboard",
+    "category": "web",
+    "image": "https://images.unsplash.com/photo-1555421689-d68471e189f2?auto=format&fit=crop&w=600&q=80",
+    "description": "A productivity dashboard for managing daily tasks and tracking progress, built using Next.js and Tailwind CSS.",
+    "tech": ["Next.js", "Tailwind CSS"],
+    "previewLink": "#",
+    "sourceLink": "#"
+  }
+]
