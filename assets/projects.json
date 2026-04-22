@@ -2,11 +2,15 @@
   {
     "id": 1,
     "title": "ZenSpace Chrome Extension",
-    "category": "web",
+    "category": "software",
     "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80",
     "description": "A productivity-focused Chrome extension offering real-time dashboards, a badge timer, ambient soundscapes, and secure note-taking via Firebase.",
-    "tech": ["JavaScript", "Chrome Extensions", "Firebase"],
-    "previewLink": "https://github.com/Miles-coder2000/z",
+    "tech": [
+      "JavaScript",
+      "Chrome Extensions",
+      "Firebase"
+    ],
+    "previewLink": "https://www.mediafire.com/.../h7y0z0a4n.../ZenSpace.zip/file",
     "sourceLink": "https://github.com/Miles-coder2000/z"
   },
   {
@@ -15,7 +19,11 @@
     "category": "web",
     "image": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80",
     "description": "A robust, scalable finance tracking application tailored for managing personal budgets and freelance income with automated KPI calculation.",
-    "tech": ["React", "Firebase", "Cloud Functions"],
+    "tech": [
+      "React",
+      "Firebase",
+      "Cloud Functions"
+    ],
     "previewLink": "https://github.com/Miles-coder2000/Expense_Tracker",
     "sourceLink": "https://github.com/Miles-coder2000/Expense_Tracker"
   },
@@ -25,27 +33,39 @@
     "category": "software",
     "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80",
     "description": "A comprehensive database management application built with Java to handle student records, grades, and enrollments securely.",
-    "tech": ["Java", "MySQL", "JDBC"],
+    "tech": [
+      "Java",
+      "MySQL",
+      "JDBC"
+    ],
     "previewLink": "https://github.com/Miles-coder2000/SRDB_Java",
     "sourceLink": "https://github.com/Miles-coder2000/SRDB_Java"
   },
   {
     "id": 4,
     "title": "Loopster",
-    "category": "web",
+    "category": "mobile",
     "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=600&q=80",
     "description": "A dynamic social networking platform allowing users to share updates, media, and interact with loops of content seamlessly.",
-    "tech": ["React", "Express", "MongoDB"],
-    "previewLink": "https://github.com/Miles-coder2000/Loopster",
+    "tech": [
+      "React",
+      "Express",
+      "MongoDB"
+    ],
+    "previewLink": "(https://drive.google.com/.../1-_FDUyjzadIc1.../view...",
     "sourceLink": "https://github.com/Miles-coder2000/Loopster"
   },
   {
     "id": 5,
     "title": "BrainMaster Quiz App",
-    "category": "web",
+    "category": "mobile",
     "image": "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&w=600&q=80",
     "description": "An interactive and engaging quiz application designed to test knowledge across various topics with real-time scoring and feedback.",
-    "tech": ["HTML", "CSS", "JavaScript"],
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
     "previewLink": "https://github.com/Miles-coder2000/BrainMaster-Quiz-App",
     "sourceLink": "https://github.com/Miles-coder2000/BrainMaster-Quiz-App"
   },
@@ -55,7 +75,10 @@
     "category": "mobile",
     "image": "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=600&q=80",
     "description": "A health and fitness application designed to track steps, monitor walking routes, and encourage a healthier lifestyle.",
-    "tech": ["React Native", "Firebase"],
+    "tech": [
+      "React Native",
+      "Firebase"
+    ],
     "previewLink": "https://github.com/Miles-coder2000/walk-saver",
     "sourceLink": "https://github.com/Miles-coder2000/walk-saver"
   },
@@ -65,8 +88,12 @@
     "category": "web",
     "image": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=600&q=80",
     "description": "A sleek movie database and tracking application providing users with trending films, reviews, and detailed cast information.",
-    "tech": ["React", "TMDB API", "Tailwind CSS"],
-    "previewLink": "https://github.com/Miles-coder2000/watchdoodiemovie",
+    "tech": [
+      "React",
+      "TMDB API",
+      "Tailwind CSS"
+    ],
+    "previewLink": "https://watchdoodie.netlify.app/landing",
     "sourceLink": "https://github.com/Miles-coder2000/watchdoodiemovie"
   },
   {
@@ -75,7 +102,11 @@
     "category": "software",
     "image": "https://images.unsplash.com/photo-1586528116311-ad8ed7c663e0?auto=format&fit=crop&w=600&q=80",
     "description": "An enterprise-level inventory management system to track stock levels, orders, and sales with comprehensive reporting tools.",
-    "tech": ["Java", "Spring Boot", "MySQL"],
+    "tech": [
+      "Java",
+      "Spring Boot",
+      "MySQL"
+    ],
     "previewLink": "https://github.com/Miles-coder2000/Inventory-System",
     "sourceLink": "https://github.com/Miles-coder2000/Inventory-System"
   },
@@ -85,8 +116,12 @@
     "category": "web",
     "image": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=600&q=80",
     "description": "A premium resume building application featuring an interactive AI Copilot, ATS keyword matrix, and high-performance glassmorphism design.",
-    "tech": ["React", "Tailwind CSS", "AI"],
-    "previewLink": "https://github.com/Miles-coder2000/ResumeIQ-Main",
+    "tech": [
+      "React",
+      "Tailwind CSS",
+      "AI"
+    ],
+    "previewLink": "https://resumeiq1.vercel.app/",
     "sourceLink": "https://github.com/Miles-coder2000/ResumeIQ-Main"
   }
 ]
