@@ -1,4 +1,4 @@
-const CACHE_NAME = 'milesgarcia-portfolio-v1';
+const CACHE_NAME = 'milesgarcia-portfolio-v2';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -21,17 +21,17 @@ self.addEventListener('install', event => {
   );
 });
 
-// Fetch Event
+// Fetch Event (Network First, fallback to cache)
 self.addEventListener('fetch', event => {
   event.respondWith(
-    caches.match(event.request)
+    fetch(event.request)
       .then(response => {
-        // Return cached version if found
-        if (response) {
-          return response;
-        }
-        // Otherwise fetch from network
-        return fetch(event.request);
+        // Optionally cache the new response here, but returning it is enough for now
+        return response;
+      })
+      .catch(() => {
+        // Fallback to cache if network fails (offline mode)
+        return caches.match(event.request);
       })
   );
 });
