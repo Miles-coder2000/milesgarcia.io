@@ -221,6 +221,19 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => modal.querySelector('.modal-content').style.opacity = '1', 10);
     }
 
+    // Certificate Modal Logic
+    const certImg = document.getElementById('cert-img');
+    if (certImg) {
+        certImg.addEventListener('click', () => {
+            modalBody.innerHTML = `
+                <h2>Certificate of Participation</h2>
+                <img src="${certImg.src}" alt="Certificate" class="modal-body-img" style="width: 100%; border-radius: 0.5rem; margin-top: 1rem;">
+            `;
+            modal.style.display = 'flex';
+            setTimeout(() => modal.querySelector('.modal-content').style.opacity = '1', 10);
+        });
+    }
+
     closeModal.addEventListener('click', () => {
         modal.style.display = 'none';
     });
